@@ -55,7 +55,7 @@ def main():
     while True:
         # Show your menu here.
 
-        choice = input(f"{"="*30}\nChoose an option:\n[1] Semester Cost\n[2] Month Cost\n[3] Class Day Cost\n[4] Credit Cost\n[5] Cost per Class Session\n[6] Cost per Party\n[Q] Quit Program\nChoice: ")
+        choice = input(f"{"="*30}\nChoose an option:\n[1] Semester Cost\n[2] Month Cost\n[3] Class Day Cost\n[4] Credit Cost\n[5] Cost per CS 1430 Class Session\n[6] Cost per Party\n[Q] Quit Program\nChoice: ")
 
         if choice == "Q":
             print(f"\nGoodbye!\n{30*"="}")
@@ -78,7 +78,7 @@ def main():
         elif choice == "6":
             party_count = int(input("[!] How many parties do you attend per year?: "))
             cost = cost_per_party(annual_cost,party_count)
-            print(f"One Party costs: ${cost}")
+            print(f"One Party costs: ${cost:.2f}")
         else:
             print("Unknown Command")
 
